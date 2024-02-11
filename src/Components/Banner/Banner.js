@@ -4,13 +4,17 @@ import React, { useState } from 'react';
 
 function Banner() {
   return (
-    <div className='flex justify-between'>
-      <ScrollToTop />
-      <div className='flex justify-around items-center'>
-        <ScrollToProjects />
-        <ScrollToContact />
+    <div className='fixed top-0'>
+      <div className='flex justify-between'>
         <div>
-          <MyDropdown />
+          <ScrollToTop />
+        </div>
+        <div className='flex justify-around items-center'>
+          <ScrollToProjects />
+          <ScrollToContact />
+          <div>
+            <MyDropdown />
+          </div>
         </div>
       </div>
     </div>
