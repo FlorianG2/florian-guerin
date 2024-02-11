@@ -4,17 +4,13 @@ import React, { useState } from 'react';
 
 function Banner() {
   return (
-    <div className='fixed top-0'>
-      <div className='flex justify-between'>
+    <div className='banner-height flex justify-between sticky top-0'>
+        <ScrollToTop />
+      <div className='flex justify-around items-center'>
+        <ScrollToProjects />
+        <ScrollToContact />
         <div>
-          <ScrollToTop />
-        </div>
-        <div className='flex justify-around items-center'>
-          <ScrollToProjects />
-          <ScrollToContact />
-          <div>
-            <MyDropdown />
-          </div>
+          <MyDropdown />
         </div>
       </div>
     </div>
@@ -81,9 +77,7 @@ const ScrollToTop = () => {
   };
 
   return (
-    <div>
-      <button onClick={scrollToTop}><h1>FLO</h1></button>
-    </div>
+    <button onClick={scrollToTop}><h1>FLO</h1></button>
   );
 };
 

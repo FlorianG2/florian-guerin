@@ -1,6 +1,7 @@
 import './App.css';
-import Home from './Components/Home/Home';
+import Title from './Components/Title/Title';
 import Banner from './Components/Banner/Banner';
+import ArrowProject from './Components/Navigation/Arrow_Project';
 
 
 function App() {
@@ -8,13 +9,14 @@ function App() {
     <div className='container mx-auto'>
       <Banner />
       <div className='h-screen'>
-        <Home />
+        <Title />
+        <ArrowProject />
       </div>
       <div className='h-screen'>
-        <Home />
+        <Title />
       </div>
       <div className='h-screen'>
-        <Home />
+        <Title />
       </div>
     </div>
   );
