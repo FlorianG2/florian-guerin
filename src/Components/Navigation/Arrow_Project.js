@@ -2,11 +2,8 @@ import Links from "../Links/Links";
 
 function ArrowProject() {
   return (
-     <div className="h-1/5 flex items-center justify-between">
-      <Links />
-      <div>
-        <ScrollToProjects />
-      </div>
+     <div className="h-1/5 flex items-center justify-end">
+      <ScrollToProjects />
     </div>
   );
 }

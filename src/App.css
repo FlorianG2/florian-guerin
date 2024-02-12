@@ -2,3 +2,12 @@
   margin: 2%;
   width: 100vw;
 }
+
+.color {
+  color: #D2D5D4;
+}
+
+.color-50 {
+  color: #D2D5D4;
+  opacity: 50%;
+}

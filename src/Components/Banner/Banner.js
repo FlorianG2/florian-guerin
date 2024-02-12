@@ -4,8 +4,8 @@ import React, { useState } from 'react';
 
 function Banner() {
   return (
-    <div className='banner-height flex justify-between sticky top-0'>
-        <ScrollToTop />
+    <div className='w-full flex justify-between items-center'>
+      <ScrollToTop />
       <div className='flex justify-around items-center'>
         <ScrollToProjects />
         <ScrollToContact />
@@ -47,7 +47,7 @@ const ScrollToProjects = () => {
 
   return (
     <div className='mx-2'>
-      <button onClick={scrollToProjects}><p>Projects</p></button>
+      <button onClick={scrollToProjects} ><p>Projects</p></button>
     </div>
   );
 };
@@ -63,7 +63,7 @@ const ScrollToContact = () => {
 
   return (
     <div className='mx-2'>
-      <button onClick={scrollToContact}><p>Contact</p></button>
+      <button onClick={scrollToContact} ><p>Contact</p></button>
     </div>
   );
 };
