@@ -32,7 +32,7 @@ function Arrows () {
   }
 
   return (
-    <div className="h-1/5 flex items-center justify-end relative">
+    <div className="flex items-center justify-end relative">
       {content}
     </div>
   );
@@ -49,7 +49,7 @@ const ScrollToProjectsDown = () => {
   };
 
   return (
-    <button onClick={scrollToProjects} className='fixed'><p>Projects ↓</p></button>
+    <button onClick={scrollToProjects} className='fixed bottom-10'><p>Projects ↓</p></button>
   );
 };
 
@@ -63,7 +63,7 @@ const ScrollToContactDown = () => {
   };
 
   return (
-    <button onClick={scrollToContact} className='fixed'><p>Contact ↓</p></button>
+    <button onClick={scrollToContact} className='fixed bottom-10'><p>Contact ↓</p></button>
   );
 };
 
@@ -77,7 +77,7 @@ const ScrollToProjectsUp = () => {
   };
 
   return (
-    <button onClick={scrollToProjects} className='fixed'><p>Projects ↑</p></button>
+    <button onClick={scrollToProjects} className='fixed bottom-10'><p>Projects ↑</p></button>
   );
 };
 

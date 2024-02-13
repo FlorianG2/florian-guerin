@@ -4,8 +4,8 @@ import React, { useState } from 'react';
 
 function Banner() {
   return (
-    <div className='w-full flex justify-between items-center'>
-      <ScrollToTop />
+    <div className='fixed top-10'>
+      {/* <ScrollToTop /> */}
       <div className='flex justify-around items-center'>
         <ScrollToProjects />
         <ScrollToContact />
@@ -16,6 +16,8 @@ function Banner() {
     </div>
   );
 }
+
+
 
 const MyDropdown = () => {
   const [selectedOption, setSelectedOption] = useState('');
@@ -68,17 +70,17 @@ const ScrollToContact = () => {
   );
 };
 
-const ScrollToTop = () => {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  };
+// const ScrollToTop = () => {
+//   const scrollToTop = () => {
+//     window.scrollTo({
+//       top: 0,
+//       behavior: 'smooth',
+//     });
+//   };
 
-  return (
-    <button onClick={scrollToTop}><h1>FLO</h1></button>
-  );
-};
+//   return (
+//     <button onClick={scrollToTop}><h1>FLO</h1></button>
+//   );
+// };
 
 export default Banner;

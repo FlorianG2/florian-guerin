@@ -3,7 +3,7 @@
 
 function Logo() {
   return (
-    <div className='fixed'>
+    <div className='fixed top-10'>
       <ScrollToTop />
     </div>
   );

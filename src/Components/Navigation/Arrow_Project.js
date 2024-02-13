@@ -1,4 +1,3 @@
-import Links from "../Links/Links";
 
 function ArrowProject() {
   return (
