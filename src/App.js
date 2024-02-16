@@ -6,6 +6,9 @@ import Links from './Components/Links/Links';
 import Arrows from './Components/Navigation/Arrows';
 import ContactForm from './Components/Contact/Contact_Form';
 import ContactInfo from './Components/Contact/Contact_Info';
+import Carrousel from './Components/Carrousel/Carrousel';
+// import Bernigaud from './Components/Projects/Bernigaud';
+// import AlmaVivaLab from './Components/Projects/Alma_Viva_Lab';
 
 
 function App() {
@@ -23,7 +26,7 @@ function App() {
         <Title />
       </div>
       <div className='h-screen'>
-        <Title />
+        <Carrousel />
       </div>
       <div className='h-screen'>
       <div className='h-1/5'></div>
