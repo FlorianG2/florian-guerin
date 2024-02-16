@@ -1,9 +1,10 @@
-import LogoBernigaud from '../../Logo_Bernigaud.jpeg'
+// import LogoBernigaud from '../../Logo_Bernigaud.jpeg'
 
 function Bernigaud() {
   return (
-    <div className='w-full h-fit border-2'>
-      <img src={LogoBernigaud} className='rounded' alt="logo Bernigaud" />
+    <div className='w-full h-full border-2'>
+      <h1>Bernigaud Group</h1>
+      {/* <img src={LogoBernigaud} className='rounded' alt="logo Bernigaud" /> */}
     </div>
   );
 }

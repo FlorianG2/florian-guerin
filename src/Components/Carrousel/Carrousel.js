@@ -17,13 +17,13 @@ const element = [<Bernigaud />, <AlmaVivaLab />, <NewProject />]
 
 function Carrousel() {
   return (
-    <div className='h-full flex justify-center items-center'>
+    <div className='h-full flex justify-center items-center w-4/5 mx-auto'>
       <Swiper
         effect={ 'coverflow' }
         grabCursor={ true }
         centeredSlides={ true }
         loop={ true }
-        slidesPerView={ '2' }
+        slidesPerView={ 'auto' }
         coverflowEffect={
           {
             rotate: 0,
@@ -48,15 +48,9 @@ function Carrousel() {
         ))}
 
         <div className='slider-controler'>
-          <div className='swiper-button-prev slider-arrow'>
-            {/* <ion-icon name="arrow-back-outline"></ion-icon>
-            <span>←</span> */}
-          </div>
-          <div className='swiper-button-next slider-arrow'>
-            {/* <ion-icon name="arrow-forward-outline"></ion-icon>
-             <span>➡︎</span> */}
-          </div>
+          <div className='swiper-button-prev '></div>
           <div className='swiper-pagination'></div>
+          <div className='swiper-button-next '></div>
         </div>
       </Swiper>
     </div>
