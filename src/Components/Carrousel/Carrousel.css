@@ -59,7 +59,7 @@
 .swiper-pagination {
   position: relative !important;
   width: 15rem !important;
-  bottom: 1rem;
+  /* bottom: 1rem; */
 }
 
 .swiper-wrapper {
@@ -70,4 +70,5 @@
 
 :root {
   --swiper-theme-color: white;
+  --swiper-navigation-size: none !important;
 }
