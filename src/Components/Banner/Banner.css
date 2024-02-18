@@ -3,7 +3,13 @@
   width: 100%;
 }
 
-/* .banner-bg {
-  background-color: #28282B;
-  z-index: 2;
-} */
+#btn-selection:hover {
+  color: #D2D5D4;
+  opacity: 50%;
+  transition: ease 200ms;
+  cursor: pointer;
+}
+
+#dropdown:hover {
+  cursor: pointer;
+}

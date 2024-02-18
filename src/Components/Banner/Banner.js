@@ -27,7 +27,7 @@ const MyDropdown = () => {
   };
 
   return (
-    <div>
+    <div id='btn-selection'>
       <select id="dropdown" className='bg-transparent' value={selectedOption} onChange={handleOptionChange}>
         <option value="option1">EN</option>
         <option value="option2">FR</option>
@@ -69,18 +69,5 @@ const ScrollToContact = () => {
     </div>
   );
 };
-
-// const ScrollToTop = () => {
-//   const scrollToTop = () => {
-//     window.scrollTo({
-//       top: 0,
-//       behavior: 'smooth',
-//     });
-//   };
-
-//   return (
-//     <button onClick={scrollToTop}><h1>FLO</h1></button>
-//   );
-// };
 
 export default Banner;
