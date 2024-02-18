@@ -8,11 +8,13 @@ import ContactForm from './Components/Contact/Contact_Form';
 import ContactInfo from './Components/Contact/Contact_Info';
 import Carrousel from './Components/Carrousel/Carrousel';
 import Light from './Components/Light/Light';
-// import Bernigaud from './Components/Projects/Bernigaud';
-// import AlmaVivaLab from './Components/Projects/Alma_Viva_Lab';
+
+
 
 
 function App() {
+
+
   return (
     <div className='container mx-auto'>
       <div className='flex items-center relative'>
