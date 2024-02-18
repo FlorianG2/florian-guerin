@@ -1,0 +1,10 @@
+.light {
+  background: rgb(47,47,50);
+  background: radial-gradient(circle, rgba(47,47,50,0.25115983893557425) 0%, rgba(47,47,50,1) 100%);
+  height: 90vh;
+  width: 90vh;
+  border-radius: 50%;
+  filter: blur(60px);
+  position: fixed;
+  z-index: -10;
+}
