@@ -1,4 +1,4 @@
-
+import { useTranslation } from "react-i18next";
 import React, { useEffect, useState } from 'react';
 
 function Arrows () {
@@ -40,6 +40,8 @@ function Arrows () {
 
 
 const ScrollToProjectsDown = () => {
+  const { t } = useTranslation();
+
   const scrollToProjects = () => {
     const viewportHeight = window.innerHeight || document.documentElement.clientHeight
     window.scrollTo({
@@ -49,11 +51,13 @@ const ScrollToProjectsDown = () => {
   };
 
   return (
-    <button onClick={scrollToProjects} className='fixed bottom-10'><p>Projects ↓</p></button>
+    <button onClick={scrollToProjects} className='fixed bottom-10'><p>{t("projects")} ↓</p></button>
   );
 };
 
 const ScrollToContactDown = () => {
+  const { t } = useTranslation();
+
   const scrollToContact = () => {
     const viewportHeight = window.innerHeight || document.documentElement.clientHeight
     window.scrollTo({
@@ -63,11 +67,13 @@ const ScrollToContactDown = () => {
   };
 
   return (
-    <button onClick={scrollToContact} className='fixed bottom-10'><p>Contact ↓</p></button>
+    <button onClick={scrollToContact} className='fixed bottom-10'><p>{t("contact")} ↓</p></button>
   );
 };
 
 const ScrollToProjectsUp = () => {
+  const { t } = useTranslation();
+
   const scrollToProjects = () => {
     const viewportHeight = window.innerHeight || document.documentElement.clientHeight
     window.scrollTo({
@@ -77,7 +83,7 @@ const ScrollToProjectsUp = () => {
   };
 
   return (
-    <button onClick={scrollToProjects} className='fixed bottom-10'><p>Projects ↑</p></button>
+    <button onClick={scrollToProjects} className='fixed bottom-10'><p>{t("projects")} ↑</p></button>
   );
 };
 

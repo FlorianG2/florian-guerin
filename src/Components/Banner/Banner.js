@@ -1,8 +1,12 @@
 import './Banner.css'
 import React, { useState } from 'react';
+import { useTranslation } from "react-i18next";
 
 
 function Banner() {
+
+
+
   return (
     <div className='fixed top-10'>
       {/* <ScrollToTop /> */}
@@ -21,17 +25,23 @@ function Banner() {
 
 const MyDropdown = () => {
   const [selectedOption, setSelectedOption] = useState('');
+  const { i18n } = useTranslation();
 
   const handleOptionChange = (event) => {
+    console.log(event.target.value);
     setSelectedOption(event.target.value);
+    const lang_code = event.target.value;
+    console.log(lang_code);
+    i18n.changeLanguage(lang_code);
+    console.log(i18n.changeLanguage(lang_code));
   };
 
   return (
     <div id='btn-selection'>
       <select id="dropdown" className='bg-transparent' value={selectedOption} onChange={handleOptionChange}>
-        <option value="option1">EN</option>
-        <option value="option2">FR</option>
-        <option value="option3">ES</option>
+        <option value="en">EN</option>
+        <option value="fr">FR</option>
+        <option value="es">ES</option>
       </select>
 
     </div>
@@ -39,6 +49,8 @@ const MyDropdown = () => {
 };
 
 const ScrollToProjects = () => {
+  const { t } = useTranslation();
+
   const scrollToProjects = () => {
     const viewportHeight = window.innerHeight || document.documentElement.clientHeight
     window.scrollTo({
@@ -49,12 +61,14 @@ const ScrollToProjects = () => {
 
   return (
     <div className='mx-2'>
-      <button onClick={scrollToProjects} ><p>Projects</p></button>
+      <button onClick={scrollToProjects} ><p>{t("projects")}</p></button>
     </div>
   );
 };
 
 const ScrollToContact = () => {
+  const { t } = useTranslation();
+
   const scrollToContact = () => {
     const viewportHeight = window.innerHeight || document.documentElement.clientHeight
     window.scrollTo({
@@ -65,7 +79,7 @@ const ScrollToContact = () => {
 
   return (
     <div className='mx-2'>
-      <button onClick={scrollToContact} ><p>Contact</p></button>
+      <button onClick={scrollToContact} ><p>{t("contact")}</p></button>
     </div>
   );
 };
