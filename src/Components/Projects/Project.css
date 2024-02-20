@@ -3,3 +3,7 @@
   outline: 0.1rem solid #D2D5D4;
   outline-offset: -0.1rem;
 }
+
+.disabled{
+  cursor: not-allowed;
+}

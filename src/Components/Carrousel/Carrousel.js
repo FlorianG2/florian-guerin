@@ -13,7 +13,7 @@ import 'swiper/css/scrollbar';
 
 import './Carrousel.css'
 
-const element = [<Bernigaud />, <Bernigaud />, <Bernigaud />]
+const element = [ <AlmaVivaLab />, <Bernigaud />, <NewProject />]
 
 function Carrousel() {
   return (
