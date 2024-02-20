@@ -1,4 +1,14 @@
 {
   "projects": "Projets",
-  "contact": "Contacte"
+  "contact": "Contact",
+  "i-am":"Je suis",
+  "Full-Stack-Developer": "Développeur Full Stack",
+  "location":"localisation",
+  "spain":"Espagne",
+  "phone":"téléphone",
+  "email":"E-mail",
+  "contact-form": "Formulaire de contact",
+  "your-name": "Prénom & Nom",
+  "your-message": "Votre message",
+  "send-message": "Envoyer!"
 }

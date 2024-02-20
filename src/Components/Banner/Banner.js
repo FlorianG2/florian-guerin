@@ -28,12 +28,9 @@ const MyDropdown = () => {
   const { i18n } = useTranslation();
 
   const handleOptionChange = (event) => {
-    console.log(event.target.value);
     setSelectedOption(event.target.value);
     const lang_code = event.target.value;
-    console.log(lang_code);
     i18n.changeLanguage(lang_code);
-    console.log(i18n.changeLanguage(lang_code));
   };
 
   return (

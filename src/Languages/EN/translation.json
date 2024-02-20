@@ -1,4 +1,14 @@
 {
   "projects": "Projects",
-  "contact": "Contact"
+  "contact": "Contact",
+  "i-am":"I am",
+  "Full-Stack-Developer": "Full Stack Developer",
+  "location":"location",
+  "spain":"Spain",
+  "phone":"phone",
+  "email":"Email",
+  "contact-form": "contact form",
+  "your-name": "First & Last Name",
+  "your-message": "Your message",
+  "send-message": "Send!"
 }
