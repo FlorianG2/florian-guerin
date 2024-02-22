@@ -44,8 +44,13 @@ function ContactForm () {
   if (submitted) {
     return (
       <>
-        <div className="text-2xl">Thank you!</div>
-        <div className="text-md">We'll be in touch soon.</div>
+      <div className="w-full h-full flex justify-center items-center">
+        <div className="text-2xl">
+          {t("thank-you")}
+          <br />
+          {t("in-touch")}
+        </div>
+      </div>
       </>
     );
   }
