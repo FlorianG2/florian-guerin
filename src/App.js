@@ -36,8 +36,8 @@ function App() {
         <Carrousel />
       </div>
       <div className='h-screen'>
-      <div className='h-1/5'></div>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-10 auto-cols-auto mx-5'>
+      {/* <div className='h-1/5'></div> */}
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-10 auto-cols-auto mx-15'>
           <ContactInfo />
           <ContactForm />
         </div>
