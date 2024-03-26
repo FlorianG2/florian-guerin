@@ -3,7 +3,7 @@ import PDF from '../../Florian_Guerin_Resume.pdf';
 
 function Links() {
   return (
-    <div className='fixed bottom-10'>
+    <div className=''>
       {/* External link for LinkedIn */}
       <a href="https://www.linkedin.com/in/florian-guerin-8b1091112/" target="_blank" rel="noopener noreferrer">
         <p>Linkedin</p>

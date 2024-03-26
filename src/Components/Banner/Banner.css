@@ -17,3 +17,7 @@
 #dropdown:hover {
   cursor: pointer;
 }
+
+.bg-dark1 {
+  background-color: #323235
+}

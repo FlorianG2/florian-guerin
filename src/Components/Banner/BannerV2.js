@@ -3,14 +3,17 @@ import React, { useState } from 'react';
 import { useTranslation } from "react-i18next";
 
 
-function Banner() {
+function BannerV2() {
   return (
-    <div className='fixed top-10'>
-      <div className='flex justify-around items-center'>
-        <ScrollToProjects />
-        <ScrollToContact />
-        <div>
-          <MyDropdown />
+    <div className='sticky top-0 bg-dark1 z-10 px-2'>
+      <div className='flex justify-between'>
+        <ScrollToTop />
+        <div className='flex justify-around items-center'>
+          <ScrollToProjects />
+          <ScrollToContact />
+          <div>
+            <MyDropdown />
+          </div>
         </div>
       </div>
     </div>
@@ -77,4 +80,17 @@ const ScrollToContact = () => {
   );
 };
 
-export default Banner;
+const ScrollToTop = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
+  return (
+    <button onClick={scrollToTop}><h1>FLO</h1></button>
+  );
+};
+
+export default BannerV2;

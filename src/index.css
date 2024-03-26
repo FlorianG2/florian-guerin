@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  background-color: #28282B;
+  background-color: #28282bf2;
   font-family: 'Courier New';
   color: #D2D5D4;
   /* -webkit-font-smoothing: antialiased;
@@ -23,7 +23,7 @@ p {
   color: #D2D5D4;
 }
 .bg-dark {
-  background-color: #28282B;
+  background-color: #28282bf2;
 }
 
 a:hover {

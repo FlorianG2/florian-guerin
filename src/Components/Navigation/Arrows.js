@@ -51,7 +51,7 @@ const ScrollToProjectsDown = () => {
   };
 
   return (
-    <button onClick={scrollToProjects} className='fixed bottom-10'><p>{t("projects")} ↓</p></button>
+    <button onClick={scrollToProjects} className=''><p>{t("projects")} ↓</p></button>
   );
 };
 
@@ -67,7 +67,7 @@ const ScrollToContactDown = () => {
   };
 
   return (
-    <button onClick={scrollToContact} className='fixed bottom-10'><p>{t("contact")} ↓</p></button>
+    <button onClick={scrollToContact} className=''><p>{t("contact")} ↓</p></button>
   );
 };
 
@@ -83,7 +83,7 @@ const ScrollToProjectsUp = () => {
   };
 
   return (
-    <button onClick={scrollToProjects} className='fixed bottom-10'><p>{t("projects")} ↑</p></button>
+    <button onClick={scrollToProjects} className=''><p>{t("projects")} ↑</p></button>
   );
 };
 

@@ -1,32 +1,35 @@
 import './App.css';
 import Title from './Components/Title/Title';
-import Logo from './Components/Banner/Logo';
-import Banner from './Components/Banner/Banner';
-import Links from './Components/Links/Links';
-import Arrows from './Components/Navigation/Arrows';
+// import Logo from './Components/Banner/Logo';
+// import Banner from './Components/Banner/Banner';
+import BannerV2 from './Components/Banner/BannerV2';
+
+// import Links from './Components/Links/Links';
+// import Arrows from './Components/Navigation/Arrows';
+import Footer from './Components/Footer/Footer';
+
 import ContactForm from './Components/Contact/Contact_Form';
 import ContactInfo from './Components/Contact/Contact_Info';
 import Carrousel from './Components/Carrousel/Carrousel';
-import Light from './Components/Light/Light';
-
-
+// import Light from './Components/Light/Light';
 
 
 function App() {
 
-
   return (
     <div className='container mx-auto'>
-      <div className='flex items-center relative'>
+      <BannerV2 />
+      {/* <div className='flex items-center relative'>
         <Logo />
       </div>
       <div className='flex items-center justify-end relative'>
         <Banner />
-      </div>
-      <Links />
-      <Arrows />
+      </div> */}
+
+      {/* <Links />
+      <Arrows /> */}
+      {/* <Light /> */}
       <div className='h-screen'>
-      <Light />
         <Title />
       </div>
       <div className='h-screen'>
@@ -39,6 +42,7 @@ function App() {
           <ContactForm />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
