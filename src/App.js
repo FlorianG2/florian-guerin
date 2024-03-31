@@ -15,28 +15,19 @@ import Carrousel from './Components/Carrousel/Carrousel';
 
 
 function App() {
+  const banner = document.getElementsByName(BannerV2)
+  console.log(banner);
 
   return (
     <div className='container mx-auto'>
       <BannerV2 />
-      {/* <div className='flex items-center relative'>
-        <Logo />
-      </div>
-      <div className='flex items-center justify-end relative'>
-        <Banner />
-      </div> */}
-
-      {/* <Links />
-      <Arrows /> */}
-      {/* <Light /> */}
-      <div className='h-screen'>
+      <div className='relative bottom-20'>
         <Title />
       </div>
       <div className='h-screen'>
         <Carrousel />
       </div>
       <div className='h-screen'>
-      {/* <div className='h-1/5'></div> */}
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-10 auto-cols-auto mx-15'>
           <ContactInfo />
           <ContactForm />

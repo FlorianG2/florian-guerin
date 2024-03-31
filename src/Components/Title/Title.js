@@ -6,7 +6,7 @@ function Title() {
   const { t } = useTranslation();
 
   return (
-    <div className='flex justify-center items-center h-full'>
+    <div className='flex justify-center items-center h-screen '>
       <div className=''>
         <div className=''>
           <p>{t("i-am")}</p>

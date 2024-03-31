@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 
 function BannerV2() {
   return (
-    <div className='sticky top-0 bg-dark1 z-10 px-2'>
+    <div className='sticky top-0 bg-dark1 z-10 px-2 h-20' id='banner'>
       <div className='flex justify-between'>
         <ScrollToTop />
         <div className='flex justify-around items-center'>
